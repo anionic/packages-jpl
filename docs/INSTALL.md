@@ -37,3 +37,34 @@ Set $JAVAPREFIX to
   - /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/bin
 
  .dylib
+ 
+ # Windows
+ 
+If the example programs don't run successfully, look carefully at any error messages; they typically indicate where the problem lies.  Then check the installation instruction s and prerequisites carefully. 
+  
+ * If you get a message about
+ 
+        ... jpl.dll ... Access is denied ...
+ 
+    then you may have lost execute permission on `jpl.dll` (please consult local Windows expertise if you don't know how to correct this).
+ 
+ * If `jpl_examples/0` complains that
+ 
+        The dynamic link library jvm.dll could not be found in the specified path 
+  
+    then you should locate jvm.dll within the Java runtime which you intend to use, and ensure that its directory is within the `PATH`.
+ 
+ * If the Java examples (e.g. `jpl\examples\Exception\run.bat`) complain that 
+  
+        The name specified is not recognized as an internal or external command, operable program or batch file. 
+   
+     then there is no Java executable java.exe in any folder on your `PATH`: you should have a `PATH` entry such as `C:\jdk1.3.1_01\bin;` 
+     
+ * If the Java examples complain that
+ 
+        The dynamic link library libpl.dll could not be found in the specified path
+     or
+     
+        Exception in thread "main" java.lang.UnsatisfiedLinkError: C:\paul\bin\jpl.dll: Can't find dependent libraries 
+ 
+     then there is no SWI-Prolog library `libpl.dll` in any folder on your `PATH`: you should have a `PATH` entry such as `C:\Program Files\pl\bin`
