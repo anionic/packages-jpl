@@ -6,6 +6,8 @@ In its current version, JPL supports the embedding of a Prolog engine within the
 
 JPL is designed in two layers, a low-level interface to the Prolog FLI and a high-level Java interface for the Java programmer who is not concerned with the details of the Prolog FLI.  The low-level interface is provided for C programmers who may wish to port their C implementations which use the FLI to Java with minimal fuss.
 
+JPL has been integrated into the full SWI-Prolog distribution starting with version 5.4.x, including binaries for MS-Windows and a Linux RPM. 
+
 ### OBJECTIVES
 
 The objectives of JPL are to:
@@ -30,9 +32,6 @@ The objectives of JPL are to:
 * Version **2.0.2** was released in March 18, 2003. It was developed by Paul Singleton and tested on Windows NT4, and was not tested on any non-Windows platform
 * The first version **1.0.0** of JPL was released in Feb 25, 1999 and was authored by Fred Dushin. It worked with Linux , under kernel 2.1.24.   
                                          
-
-
-JPL has been integrated into the full SWI-Prolog distribution starting with version 5.4.x, including binaries for MS-Windows and a Linux RPM. 
 
 
 ### JPL API: Java and Prolog
